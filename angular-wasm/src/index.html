@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularWasm</title>
+  <base href="/">
+  <script>
+    var Module = {
+      locateFile: function (s) {
+        return 'pkg/' + s;
+      }
+    };
+
+  </script>
+  <script src="./pkg/wasm_game_of_life.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <app-root></app-root>
+</body>
+
+</html>
